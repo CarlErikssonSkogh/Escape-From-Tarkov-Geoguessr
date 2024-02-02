@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script  src="guess.js"></script>
+    <script src ="index.js"></script>
+    <title>Tarkov Geoguessr</title>
+</head>
+<body>
+    <div class="container">
+        <div id="randomdLocation" class="randomLocationContainer">
+            <div class="imageAndCounter">
+                <h1 id="imageCounter" class="starting_image_counter">1</h1>
+                <img id="randomImage" src="images/customsDetailed.jpg" alt="map">
+            </div>
+            <img src="images/arrow.png" id="right_arrow" class="arrow right" alt="map">
+            <img src="images/arrow.png" id="left_arrow" class="arrow left" alt="map">
+        </div>
+        <div class="imageContainer">
+            <div class="imageWrapper">
+                <img id="myimage" class="starting-image" src="images/customsDetailed.jpg" alt="map">
+                <button id = "guess_button">Guess</button>
+                <div class="marker" id="markerContainer"> 
+                    <img id="marker" src="images/marker.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class ="battlestate">This website is not affiliated with Battlestate Games</div>
+</body>
+</html>

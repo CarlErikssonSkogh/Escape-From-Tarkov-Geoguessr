@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  background-image: url(images/map3.jpg);
+  background-size: cover;
+}
+
+
+.imageContainer {
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#randomImage {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+#myimage {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+  background-color: seagreen;
+  display: flex;
+}
+
+.randomLocationContainer {
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.marker {
+  position: absolute;
+  width: 3vh;
+  height: 3vh;
+  display: none;
+}
+
+#marker{
+max-width: 100%;
+max-height: 100%;
+}
+
+/*styles for arrow*/
+.arrow {
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  display: flex;
+  align-self: center;
+  border: 0.5vh solid #fafafa; /* Added */
+}
+
+
+.left{
+  transform: rotate(180deg);
+  left: 0;
+}
+.right{
+  transform: rotate(0deg);
+  right: 0;
+}
+.starting_image_counter {
+  position: absolute;
+  top: 0;
+  font-size: 3rem;
+  color: whitesmoke;
+  font-family: 'Merriweather', serif;
+}
+
+.imageAndCounter {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#guess_button{
+  color: black;
+  text-decoration: none;
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  bottom: -10%;
+  left: 40%;
+  right:40%;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+  .container {
+      justify-content: center; /* Adjust as needed for smaller screens */
+  }
+
+  .arrow {
+      width: 3vh;
+      height: 3vh;
+  }
+
+  #imageCounter{
+    font-size: 2vh;
+  }
+
+  .zoomify {
+      width: 100%;
+      height: 100%;
+  }
+}
+
+
+
+
+
+
+/*ChooseMap.html*/
+body.chooseMap {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.settingsContainer {
+  width: 90vw;
+  height: 100vh;
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gamemodeContainer{
+  width: 75%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  border: 0.5vh solid black;
+  background-color: rgb(255, 255, 255);
+}
+
+.leaderboardContainer{
+  width: 75%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  border: 0.5vh solid black;
+  background-color: rgb(255, 255, 255);
+}
+
+.leaderboardContainer div{
+font-size: 2.5vh;
+}
+
+.leaderboardContainer div li{
+  list-style: none;
+}
+.settings{
+background-color: rgb(255, 255, 255);
+position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+border: 0.5vh solid black;
+border-top: none;
+width: 75%;
+height:30%;
+color: rgb(0, 0, 0);
+font-size: 1.5vw;
+}
+
+#settingsText {
+  position: absolute;
+  font-size: 3vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gamemode{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  width: 49%;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 1.5vw;
+}
+
+
+
+
+.input-group {
+  margin-top: 6vh;
+  position: relative;
+  /* other styles as needed */
+}
+
+.roundsLabel{
+  font-size: 2.5vh;
+}
+
+#rounds{
+  background-color: rgb(255, 255, 255);
+}
+
+#applySettings{
+  position: absolute;
+  font-size: 2vh;
+  bottom: 2vh;
+  display: flex;
+  align-self: center;
+}
+
+
+.battlestate{
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  height: 2vh;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 1.5vh;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+#imgDiv{
+  width: 100%;
+  height: 50%;
+}
+
+.roundsLabel{
+  font-size: 1.5vh;
+}
+
+#randomizedLeaderboard_group{
+  font-size: 1.5vh;
+}
+
+#chooseMapLeaderboard_group{
+  font-size: 1.5vh;
+}
+}
+
+
+
+
+/*Get score html*/
+
+#score_body{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+#scoreContainer {
+  width: 95%;
+  height: 95%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap:1vh;
+}
+
+#scoreText{
+  color: rgb(0, 0, 0);
+  font-size: 3vh;
+}
+
+#totalScoreText{
+  color: black;
+  font-size: 3vh;
+}
+.correctMarkerContainer {
+  position: absolute;
+  width: 3vh;
+  height: 3vh;
+}
+
+#correctMarker{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#myCanvas {
+  background-color: transparent;
+  position: absolute;
+}
+
+
+
+#progress {
+  width:50vw;
+  height:5vh;
+  border:1px solid black;
+  position:relative;
+}
+#progress:after {
+  content:'\A';
+  position:absolute;
+  background:black;
+  top:0; bottom:0;
+  left:0; 
+  width: var(--after-width);
+  -webkit-animation: filler 2s ease-in-out;
+  -moz-animation: filler 2s ease-in-out;
+  animation: filler 2s ease-in-out;
+}
+
+@-webkit-keyframes filler {
+  0% {
+      width:0;
+  }
+}
+@-moz-keyframes filler {
+  0% {
+      width:0;
+  }
+}
+@keyframes filler {
+  0% {
+      width:0;
+  }
+}
+
+#nextButton{
+  height: 5vh;
+  width: 25vw;
+  font-size: 3vh;
+  font-weight: bold;
+}

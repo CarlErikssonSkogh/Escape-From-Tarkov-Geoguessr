@@ -1,0 +1,93 @@
+[
+  {
+      "customs": {
+          "map": "images/customsDetailed.jpg",
+          "locations": [
+              ["locations/customs/location1", [0.05095535115607636, 0.6752907297289882]],
+              ["locations/customs/location2", [0.4678126679778291, 0.5850855135935827]],
+              ["locations/customs/location3", [0.8807420494699647, 0.20774178346593966]]
+          ]
+      }
+  },
+  {
+      "lighthouse": {
+          "map": "images/lighthouse.jpg",
+          "locations": [
+              ["locations/lighthouse/location1", [0.5053003533568905, 0.33897755223033443]],
+              ["locations/lighthouse/location2", [0.3674911660777385, 0.37424911552459095]],
+              ["locations/lighthouse/location3", [0.6784452296819788, 0.40031940143773703]]
+          ]
+      }
+  },
+  {
+      "shoreline": {
+          "map": "images/shorelinenew.jpg",
+          "locations": [
+              ["locations/shoreline/location1", [0.08303886925795052, 0.7300775425054588]],
+              ["locations/shoreline/location2", [0.2791519434628975, 0.5426141564480481]],
+              ["locations/shoreline/location3", [0.941696113074205, 0.03135037629147361]]
+          ]
+      }
+  },
+  {
+      "reserve": {
+          "map": "images/reserve.jpg",
+          "locations": [
+              ["locations/reserve/location1", [0.16, 0.5654008438818565]],
+              ["locations/reserve/location2", [0.6425, 0.4978902953586498]],
+              ["locations/reserve/location3", [0.445, 0.8037974683544303]]
+          ]
+      }
+  },
+  {
+      "streets_of_tarkov": {
+          "map": "images/streets.jpg",
+          "locations": [
+              ["locations/streets/location1", [0.34452296819787986, 0.43342576087117357]],
+              ["locations/streets/location2", [0.6598939929328622, 0.1043231078836905]],
+              ["locations/streets/location3", [0.6166077738515902, 0.4032789529639232]]
+          ]
+
+      }
+  },
+  {
+      "factory": {
+          "map": "images/factory.jpg",
+          "locations": [
+              ["locations/factory/location1", [0.46819787985865724, 0.38849627012171184]],
+              ["locations/factory/location2", [0.6289752650176679, 0.3492343934040047]],
+              ["locations/factory/location3", [0.1598939929328622, 0.7073027090694936]]
+          ]
+      }
+  },
+  {
+      "labs": {
+          "map": "images/labs.jpg",
+          "locations": [
+              ["locations/labs/location1", [0.10424028268551237, 0.5238695111338207]],
+              ["locations/labs/location2", [0.43109540636042404, 0.7812238704057425]],
+              ["locations/labs/location3", [0.803886925795053, 0.4795568400009071]]
+          ]
+      }
+  },
+  {
+      "woods": {
+          "map": "images/woods.jpg",
+          "locations": [
+              ["locations/woods/location1", [0.18125, 0.6749680715197957]],
+              ["locations/woods/location2", [0.49625, 0.6928480204342273]],
+              ["locations/woods/location3", [0.61, 0.570242656449553]]
+          ]
+      }
+  },
+  {
+      "interchange": {
+          "map": "images/interchange.jpg",
+          "locations": [
+              ["locations/interchange/location1", [0.10070671378091872, 0.13050633350493057]],
+              ["locations/interchange/location2", [0.4752650176678445, 0.08823282918405374]],
+              ["locations/interchange/location3", [0.8604240282685512, 0.4060669542632387]]
+          ]
+      }
+  }
+]
